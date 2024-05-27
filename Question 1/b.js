@@ -2,14 +2,14 @@
 
 // Using Anonymous Function:
 let str = function () {
-    let arr = "hello there how are you"
+    let arr = "hello my name is vimal"
     let titlecase = arr.toLowerCase().replace(/\b(\w)/g, s => s.toUpperCase());
     console.log(titlecase)
   }
   str()
 
 // Using IIFE:
-let st = "hello there how are you";
+let st = "hello my name is vimal";
 (function (st) {
     st = st.toLowerCase().split(' ');
     for (var i = 0; i < st.length; i++){
