@@ -2,7 +2,7 @@
 //Using Anonymous Function:
 let findDuplicates = function () {
   
-    const yourArray = [1, 1, 2, 3, 4, 5, 5]
+    const yourArray = [1, 2, 2, 3, 4, 5, 5]
     let duplicates = []
     const tempArray = [...yourArray].sort() 
     for (let i = 0; i < tempArray.length; i++) {
@@ -13,3 +13,13 @@ let findDuplicates = function () {
     console.log(duplicates) 
   }
   findDuplicates()
+
+//Using IIFE:
+(function () {
+  
+  let numbers = [1, 2, 3, 2, 4, 5, 5, 6];
+  
+  let duplicates = numbers.filter((item, index) => index !== numbers.indexOf(item));
+  
+  console.log(duplicates);
+})()
